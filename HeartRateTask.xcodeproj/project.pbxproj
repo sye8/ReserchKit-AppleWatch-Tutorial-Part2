@@ -25,6 +25,16 @@
 		C75D9010210200A5001271AC /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D900F210200A5001271AC /* ConsentTask.swift */; };
 		C7DE3407210883DE005DC598 /* HeartRateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE3406210883DE005DC598 /* HeartRateTask.swift */; };
 		C7DE340F21089B0F005DC598 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE340E21089B0F005DC598 /* TasksViewController.swift */; };
+		C7DE34162108A174005DC598 /* ResultParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE34152108A174005DC598 /* ResultParser.swift */; };
+		C7DE341D2108A74A005DC598 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DE341B2108A74A005DC598 /* Interface.storyboard */; };
+		C7DE341F2108A74A005DC598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DE341E2108A74A005DC598 /* Assets.xcassets */; };
+		C7DE34262108A74A005DC598 /* WatchHeartRate Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C7DE34252108A74A005DC598 /* WatchHeartRate Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C7DE342B2108A74A005DC598 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE342A2108A74A005DC598 /* InterfaceController.swift */; };
+		C7DE342D2108A74A005DC598 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE342C2108A74A005DC598 /* ExtensionDelegate.swift */; };
+		C7DE342F2108A74A005DC598 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE342E2108A74A005DC598 /* NotificationController.swift */; };
+		C7DE34312108A74A005DC598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DE34302108A74A005DC598 /* Assets.xcassets */; };
+		C7DE34362108A74A005DC598 /* WatchHeartRate.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C7DE34192108A74A005DC598 /* WatchHeartRate.app */; };
+		C7E0E4DE2108CA590042D204 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E0E4DD2108CA590042D204 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +73,20 @@
 			remoteGlobalIDString = B183A4731A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
+		C7DE34272108A74A005DC598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75D8FBB2101D1FB001271AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7DE34242108A74A005DC598;
+			remoteInfo = "WatchHeartRate Extension";
+		};
+		C7DE34342108A74A005DC598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75D8FBB2101D1FB001271AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7DE34182108A74A005DC598;
+			remoteInfo = WatchHeartRate;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +99,28 @@
 				C75D90082101F6B8001271AC /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DE343A2108A74A005DC598 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C7DE34262108A74A005DC598 /* WatchHeartRate Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DE343E2108A74A005DC598 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C7DE34362108A74A005DC598 /* WatchHeartRate.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -104,6 +150,21 @@
 		C75D900F210200A5001271AC /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		C7DE3406210883DE005DC598 /* HeartRateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTask.swift; sourceTree = "<group>"; };
 		C7DE340E21089B0F005DC598 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		C7DE34152108A174005DC598 /* ResultParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultParser.swift; sourceTree = "<group>"; };
+		C7DE34192108A74A005DC598 /* WatchHeartRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchHeartRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DE341C2108A74A005DC598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C7DE341E2108A74A005DC598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7DE34202108A74A005DC598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7DE34252108A74A005DC598 /* WatchHeartRate Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchHeartRate Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DE342A2108A74A005DC598 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C7DE342C2108A74A005DC598 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C7DE342E2108A74A005DC598 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C7DE34302108A74A005DC598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7DE34322108A74A005DC598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7DE34332108A74A005DC598 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C7DE343F2108A9F2005DC598 /* WatchHeartRate Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchHeartRate Extension.entitlements"; sourceTree = "<group>"; };
+		C7DE34422108C393005DC598 /* WatchHeartRate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchHeartRate.entitlements; sourceTree = "<group>"; };
+		C7E0E4DD2108CA590042D204 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,12 +191,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7DE34222108A74A005DC598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E0E4DE2108CA590042D204 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C7303B3D21021E1400B82ACE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7E0E4DD2108CA590042D204 /* HealthKit.framework */,
 				C7303B3E21021E1400B82ACE /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -146,6 +216,7 @@
 			children = (
 				C7DE340E21089B0F005DC598 /* TasksViewController.swift */,
 				C7DE3406210883DE005DC598 /* HeartRateTask.swift */,
+				C7DE34152108A174005DC598 /* ResultParser.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -157,6 +228,8 @@
 				C75D8FC52101D1FB001271AC /* HeartRateTask */,
 				C75D8FDA2101D1FB001271AC /* HeartRateTaskTests */,
 				C75D8FE52101D1FB001271AC /* HeartRateTaskUITests */,
+				C7DE341A2108A74A005DC598 /* WatchHeartRate */,
+				C7DE34292108A74A005DC598 /* WatchHeartRate Extension */,
 				C75D8FC42101D1FB001271AC /* Products */,
 				C7303B3D21021E1400B82ACE /* Frameworks */,
 			);
@@ -168,6 +241,8 @@
 				C75D8FC32101D1FB001271AC /* HeartRateTask.app */,
 				C75D8FD72101D1FB001271AC /* HeartRateTaskTests.xctest */,
 				C75D8FE22101D1FB001271AC /* HeartRateTaskUITests.xctest */,
+				C7DE34192108A74A005DC598 /* WatchHeartRate.app */,
+				C7DE34252108A74A005DC598 /* WatchHeartRate Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +311,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C7DE341A2108A74A005DC598 /* WatchHeartRate */ = {
+			isa = PBXGroup;
+			children = (
+				C7DE34422108C393005DC598 /* WatchHeartRate.entitlements */,
+				C7DE341B2108A74A005DC598 /* Interface.storyboard */,
+				C7DE341E2108A74A005DC598 /* Assets.xcassets */,
+				C7DE34202108A74A005DC598 /* Info.plist */,
+			);
+			path = WatchHeartRate;
+			sourceTree = "<group>";
+		};
+		C7DE34292108A74A005DC598 /* WatchHeartRate Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C7DE343F2108A9F2005DC598 /* WatchHeartRate Extension.entitlements */,
+				C7DE342A2108A74A005DC598 /* InterfaceController.swift */,
+				C7DE342C2108A74A005DC598 /* ExtensionDelegate.swift */,
+				C7DE342E2108A74A005DC598 /* NotificationController.swift */,
+				C7DE34302108A74A005DC598 /* Assets.xcassets */,
+				C7DE34322108A74A005DC598 /* Info.plist */,
+				C7DE34332108A74A005DC598 /* PushNotificationPayload.apns */,
+			);
+			path = "WatchHeartRate Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,11 +347,13 @@
 				C75D8FC02101D1FB001271AC /* Frameworks */,
 				C75D8FC12101D1FB001271AC /* Resources */,
 				C75D900B2101F6B8001271AC /* Embed Frameworks */,
+				C7DE343E2108A74A005DC598 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				C75D900A2101F6B8001271AC /* PBXTargetDependency */,
+				C7DE34352108A74A005DC598 /* PBXTargetDependency */,
 			);
 			name = HeartRateTask;
 			productName = ResearchKitConsent;
@@ -294,6 +396,40 @@
 			productReference = C75D8FE22101D1FB001271AC /* HeartRateTaskUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C7DE34182108A74A005DC598 /* WatchHeartRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DE343B2108A74A005DC598 /* Build configuration list for PBXNativeTarget "WatchHeartRate" */;
+			buildPhases = (
+				C7DE34172108A74A005DC598 /* Resources */,
+				C7DE343A2108A74A005DC598 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7DE34282108A74A005DC598 /* PBXTargetDependency */,
+			);
+			name = WatchHeartRate;
+			productName = WatchHeartRate;
+			productReference = C7DE34192108A74A005DC598 /* WatchHeartRate.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C7DE34242108A74A005DC598 /* WatchHeartRate Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DE34372108A74A005DC598 /* Build configuration list for PBXNativeTarget "WatchHeartRate Extension" */;
+			buildPhases = (
+				C7DE34212108A74A005DC598 /* Sources */,
+				C7DE34222108A74A005DC598 /* Frameworks */,
+				C7DE34232108A74A005DC598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchHeartRate Extension";
+			productName = "WatchHeartRate Extension";
+			productReference = C7DE34252108A74A005DC598 /* WatchHeartRate Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -323,6 +459,27 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = C75D8FC22101D1FB001271AC;
 					};
+					C7DE34182108A74A005DC598 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					C7DE34242108A74A005DC598 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = C75D8FBE2101D1FB001271AC /* Build configuration list for PBXProject "HeartRateTask" */;
@@ -347,6 +504,8 @@
 				C75D8FC22101D1FB001271AC /* HeartRateTask */,
 				C75D8FD62101D1FB001271AC /* HeartRateTaskTests */,
 				C75D8FE12101D1FB001271AC /* HeartRateTaskUITests */,
+				C7DE34182108A74A005DC598 /* WatchHeartRate */,
+				C7DE34242108A74A005DC598 /* WatchHeartRate Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -393,6 +552,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7DE34172108A74A005DC598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DE341F2108A74A005DC598 /* Assets.xcassets in Resources */,
+				C7DE341D2108A74A005DC598 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DE34232108A74A005DC598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DE34312108A74A005DC598 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -404,6 +580,7 @@
 				C75D8FF92101F34A001271AC /* IntroSegue.swift in Sources */,
 				C75D8FC72101D1FB001271AC /* AppDelegate.swift in Sources */,
 				C7303B3721021A1B00B82ACE /* HealthDataAuthStep.swift in Sources */,
+				C7DE34162108A174005DC598 /* ResultParser.swift in Sources */,
 				C75D9010210200A5001271AC /* ConsentTask.swift in Sources */,
 				C75D8FFC2101F630001271AC /* ConsentViewController.swift in Sources */,
 				C7303B3B21021C0E00B82ACE /* HealthDataAuthStepViewController.swift in Sources */,
@@ -429,6 +606,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7DE34212108A74A005DC598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DE342F2108A74A005DC598 /* NotificationController.swift in Sources */,
+				C7DE342D2108A74A005DC598 /* ExtensionDelegate.swift in Sources */,
+				C7DE342B2108A74A005DC598 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -447,6 +634,16 @@
 			name = ResearchKit;
 			targetProxy = C75D90092101F6B8001271AC /* PBXContainerItemProxy */;
 		};
+		C7DE34282108A74A005DC598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7DE34242108A74A005DC598 /* WatchHeartRate Extension */;
+			targetProxy = C7DE34272108A74A005DC598 /* PBXContainerItemProxy */;
+		};
+		C7DE34352108A74A005DC598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7DE34182108A74A005DC598 /* WatchHeartRate */;
+			targetProxy = C7DE34342108A74A005DC598 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -464,6 +661,14 @@
 				C75D8FD02101D1FB001271AC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C7DE341B2108A74A005DC598 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7DE341C2108A74A005DC598 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -585,6 +790,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JM5BU57S6W;
 				INFOPLIST_FILE = HeartRateTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sye8.HeartRateTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -602,6 +808,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JM5BU57S6W;
 				INFOPLIST_FILE = HeartRateTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sye8.HeartRateTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -676,6 +883,82 @@
 			};
 			name = Release;
 		};
+		C7DE34382108A74A005DC598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchHeartRate Extension/WatchHeartRate Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JM5BU57S6W;
+				INFOPLIST_FILE = "WatchHeartRate Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sye8.HeartRateTask.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C7DE34392108A74A005DC598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchHeartRate Extension/WatchHeartRate Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JM5BU57S6W;
+				INFOPLIST_FILE = "WatchHeartRate Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sye8.HeartRateTask.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		C7DE343C2108A74A005DC598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JM5BU57S6W;
+				IBSC_MODULE = WatchHeartRate_Extension;
+				INFOPLIST_FILE = WatchHeartRate/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = sye8.HeartRateTask.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C7DE343D2108A74A005DC598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JM5BU57S6W;
+				IBSC_MODULE = WatchHeartRate_Extension;
+				INFOPLIST_FILE = WatchHeartRate/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = sye8.HeartRateTask.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -711,6 +994,24 @@
 			buildConfigurations = (
 				C75D8FF22101D1FB001271AC /* Debug */,
 				C75D8FF32101D1FB001271AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7DE34372108A74A005DC598 /* Build configuration list for PBXNativeTarget "WatchHeartRate Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DE34382108A74A005DC598 /* Debug */,
+				C7DE34392108A74A005DC598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7DE343B2108A74A005DC598 /* Build configuration list for PBXNativeTarget "WatchHeartRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DE343C2108A74A005DC598 /* Debug */,
+				C7DE343D2108A74A005DC598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
