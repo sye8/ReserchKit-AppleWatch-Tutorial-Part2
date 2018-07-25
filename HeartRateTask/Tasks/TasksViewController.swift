@@ -23,6 +23,12 @@ class TasksViewController: UIViewController{
         present(taskViewController, animated: true, completion: nil)
     }
     
+    @IBAction func heartRateButtonTapped(_ sender: UIButton){
+        let taskViewController = ORKTaskViewController(task: HeartRateTask, taskRun: nil)
+        taskViewController.delegate = self
+        present(taskViewController, animated: true, completion: nil)
+    }
+    
     @IBAction func leaveButtonTapped(_ sender: UIButton) {
         ORKPasscodeViewController.removePasscodeFromKeychain()
         performSegue(withIdentifier: "returnToConsent", sender: nil)
@@ -46,5 +52,8 @@ class TasksViewController: UIViewController{
 extension TasksViewController: ORKTaskViewControllerDelegate{
     func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
         taskViewController.dismiss(animated: true, completion: nil)
+        if reason == .completed && taskViewController.result.identifier == "HeartRateTask"{
+            //Do something with collected data
+        }
     }
 }

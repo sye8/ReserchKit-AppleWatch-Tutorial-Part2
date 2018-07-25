@@ -13,7 +13,7 @@
         <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="ResearchKitConsent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="HeartRateTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,8 +21,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="amv-TM-yyS" kind="custom" identifier="toConsent" customClass="IntroSegue" customModule="ResearchKitConsent" customModuleProvider="target" id="KBW-MG-AmJ"/>
-                        <segue destination="kzu-fe-xof" kind="custom" identifier="toTasks" customClass="IntroSegue" customModule="ResearchKitConsent" customModuleProvider="target" id="uaC-GA-6sy"/>
+                        <segue destination="amv-TM-yyS" kind="custom" identifier="toConsent" customClass="IntroSegue" customModule="HeartRateTask" customModuleProvider="target" id="KBW-MG-AmJ"/>
+                        <segue destination="kzu-fe-xof" kind="custom" identifier="toTasks" customClass="IntroSegue" customModule="HeartRateTask" customModuleProvider="target" id="uaC-GA-6sy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -32,7 +32,7 @@
         <!--Consent View Controller-->
         <scene sceneID="Hd4-q8-Jak">
             <objects>
-                <viewController id="amv-TM-yyS" customClass="ConsentViewController" customModule="ResearchKitConsent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="amv-TM-yyS" customClass="ConsentViewController" customModule="HeartRateTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xN4-RD-WDq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
         <!--Tasks View Controller-->
         <scene sceneID="OeK-5t-fEa">
             <objects>
-                <viewController id="kzu-fe-xof" customClass="TasksViewController" customModule="ResearchKitConsent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kzu-fe-xof" customClass="TasksViewController" customModule="HeartRateTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LFX-oP-wrT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,13 +88,22 @@
                                 <state key="normal" title="Consent Document"/>
                                 <connections>
                                     <action selector="consentButtonTapped:" destination="kzu-fe-xof" eventType="touchUpInside" id="rhd-Xd-PYx"/>
-                                    <action selector="joinButtonTapped:" destination="amv-TM-yyS" eventType="touchUpInside" id="cGS-cl-mCE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aC9-30-X7j">
+                                <rect key="frame" x="120" y="214" width="134" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Heart Rate Task"/>
+                                <connections>
+                                    <action selector="heartRateButtonTapped:" destination="kzu-fe-xof" eventType="touchUpInside" id="xFM-1a-lrP"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="aC9-30-X7j" firstAttribute="centerX" secondItem="LFX-oP-wrT" secondAttribute="centerX" id="9MJ-4B-e5P"/>
                             <constraint firstItem="V3c-VX-2Xj" firstAttribute="bottom" secondItem="Gc3-fT-QWJ" secondAttribute="bottom" constant="120" id="Arg-gw-MY6"/>
+                            <constraint firstItem="aC9-30-X7j" firstAttribute="top" secondItem="KvS-Cp-plf" secondAttribute="bottom" constant="80" id="SpO-IE-QVA"/>
                             <constraint firstItem="Gc3-fT-QWJ" firstAttribute="centerX" secondItem="LFX-oP-wrT" secondAttribute="centerX" id="h1t-cx-Pkk"/>
                             <constraint firstItem="KvS-Cp-plf" firstAttribute="centerX" secondItem="LFX-oP-wrT" secondAttribute="centerX" id="h5F-uW-VUC"/>
                             <constraint firstItem="KvS-Cp-plf" firstAttribute="top" secondItem="V3c-VX-2Xj" secondAttribute="top" constant="80" id="qqu-ld-7Xy"/>
@@ -108,6 +117,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KBW-MG-AmJ"/>
+        <segue reference="oFs-uU-e5A"/>
     </inferredMetricsTieBreakers>
 </document>
