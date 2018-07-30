@@ -52,14 +52,5 @@ class TasksViewController: UIViewController{
 extension TasksViewController: ORKTaskViewControllerDelegate{
     func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
         taskViewController.dismiss(animated: true, completion: nil)
-        if reason == .completed && taskViewController.result.identifier == "HeartRateTask"{
-            if let results = taskViewController.result.results, results.count > 2 {
-                if let hrResult = results[2] as? ORKStepResult{
-                    TaskResults.startDate = hrResult.startDate
-                    TaskResults.endDate = hrResult.endDate
-                    print("Start Date: \(TaskResults.startDate)\nEnd Date: \(TaskResults.endDate)\n")
-                }
-            }
-        }
     }
 }
