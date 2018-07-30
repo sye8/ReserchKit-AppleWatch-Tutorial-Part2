@@ -25,7 +25,6 @@
 		C75D9010210200A5001271AC /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D900F210200A5001271AC /* ConsentTask.swift */; };
 		C7DE3407210883DE005DC598 /* HeartRateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE3406210883DE005DC598 /* HeartRateTask.swift */; };
 		C7DE340F21089B0F005DC598 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE340E21089B0F005DC598 /* TasksViewController.swift */; };
-		C7DE34162108A174005DC598 /* ResultParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE34152108A174005DC598 /* ResultParser.swift */; };
 		C7DE341D2108A74A005DC598 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DE341B2108A74A005DC598 /* Interface.storyboard */; };
 		C7DE341F2108A74A005DC598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DE341E2108A74A005DC598 /* Assets.xcassets */; };
 		C7DE34262108A74A005DC598 /* WatchHeartRate Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C7DE34252108A74A005DC598 /* WatchHeartRate Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -150,7 +149,6 @@
 		C75D900F210200A5001271AC /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		C7DE3406210883DE005DC598 /* HeartRateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTask.swift; sourceTree = "<group>"; };
 		C7DE340E21089B0F005DC598 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
-		C7DE34152108A174005DC598 /* ResultParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultParser.swift; sourceTree = "<group>"; };
 		C7DE34192108A74A005DC598 /* WatchHeartRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchHeartRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DE341C2108A74A005DC598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		C7DE341E2108A74A005DC598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 			children = (
 				C7DE340E21089B0F005DC598 /* TasksViewController.swift */,
 				C7DE3406210883DE005DC598 /* HeartRateTask.swift */,
-				C7DE34152108A174005DC598 /* ResultParser.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -580,7 +577,6 @@
 				C75D8FF92101F34A001271AC /* IntroSegue.swift in Sources */,
 				C75D8FC72101D1FB001271AC /* AppDelegate.swift in Sources */,
 				C7303B3721021A1B00B82ACE /* HealthDataAuthStep.swift in Sources */,
-				C7DE34162108A174005DC598 /* ResultParser.swift in Sources */,
 				C75D9010210200A5001271AC /* ConsentTask.swift in Sources */,
 				C75D8FFC2101F630001271AC /* ConsentViewController.swift in Sources */,
 				C7303B3B21021C0E00B82ACE /* HealthDataAuthStepViewController.swift in Sources */,
